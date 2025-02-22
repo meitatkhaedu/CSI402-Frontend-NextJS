@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                print "Hello World"
+                sh 'docker build -t csi204-html
+                sh 'docker run -d -p 40510:80 csi204-html'
             }
         }
     }
